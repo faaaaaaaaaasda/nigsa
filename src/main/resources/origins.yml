@@ -1,0 +1,262 @@
+# =====================================================================
+#  Wincors SMP - ORIGINS & LEGENDARY WEAPONS  (edit, then /wincors reload)
+# =====================================================================
+#  The ten origin KEYS (PYRO, AQUA, ...) are fixed. Everything inside them
+#  can be changed: display name, color, description, GUI icon, and the
+#  legendary weapon given at max mana.
+#
+#  weapon.proc = what happens when the weapon hits (needs max mana + the
+#  matching origin). Keys: cooldown-seconds, extra-damage, fire-ticks,
+#  freeze-ticks, knockback (push away), launch (throw upward), lightning,
+#  heal-attacker (health points), particle, effects ("EFFECT:seconds:amp").
+#  weapon.enchants use "ENCHANT:level" (levels above vanilla max are allowed).
+# =====================================================================
+
+PYRO:
+  display: Pyro
+  color: '&c'
+  description: Masters of flame. Burn everything in your path.
+  icon: BLAZE_POWDER
+  weapon:
+    name: Emberfang
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - FIRE_ASPECT:2
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 3
+      fire-ticks: 160
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 0.0
+      lightning: false
+      heal-attacker: 0
+      particle: FLAME
+      effects: []
+AQUA:
+  display: Aqua
+  color: '&9'
+  description: Children of the tide. Control water and healing.
+  icon: HEART_OF_THE_SEA
+  weapon:
+    name: Tidebreaker
+    material: TRIDENT
+    unbreakable: true
+    enchants:
+    - IMPALING:5
+    - LOYALTY:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 0
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 1.4
+      launch: 0.0
+      lightning: false
+      heal-attacker: 0
+      particle: SPLASH
+      effects:
+      - SLOWNESS:4:1
+TERRA:
+  display: Terra
+  color: '&2'
+  description: Born of stone. Tanky, earthshaking power.
+  icon: GRASS_BLOCK
+  weapon:
+    name: Stonebreaker
+    material: NETHERITE_AXE
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 3
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 1.0
+      lightning: false
+      heal-attacker: 0
+      particle: CRIT
+      effects:
+      - SLOWNESS:3:2
+AERO:
+  display: Aero
+  color: '&f'
+  description: Riders of the wind. Speed and mobility.
+  icon: FEATHER
+  weapon:
+    name: Zephyr Edge
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 0
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 1.3
+      lightning: false
+      heal-attacker: 0
+      particle: CLOUD
+      effects: []
+SHADOW:
+  display: Shadow
+  color: '&8'
+  description: Stalkers of the dark. Stealth and life-drain.
+  icon: ENDER_EYE
+  weapon:
+    name: Nightfall
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 0
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 0.0
+      lightning: false
+      heal-attacker: 2
+      particle: SMOKE
+      effects:
+      - BLINDNESS:3:0
+      - WITHER:4:1
+STORM:
+  display: Storm
+  color: '&e'
+  description: Wielders of lightning. Ranged burst damage.
+  icon: LIGHTNING_ROD
+  weapon:
+    name: Thunderfury
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 5
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 0.0
+      lightning: true
+      heal-attacker: 0
+      particle: ELECTRIC_SPARK
+      effects: []
+FROST:
+  display: Frost
+  color: '&b'
+  description: Heralds of winter. Freeze and control enemies.
+  icon: BLUE_ICE
+  weapon:
+    name: Glacier's Kiss
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 0
+      fire-ticks: 0
+      freeze-ticks: 220
+      knockback: 0.0
+      launch: 0.0
+      lightning: false
+      heal-attacker: 0
+      particle: SNOWFLAKE
+      effects:
+      - SLOWNESS:3:2
+VITALIS:
+  display: Vitalis
+  color: '&a'
+  description: Voice of nature. Regeneration and poison.
+  icon: OAK_SAPLING
+  weapon:
+    name: Verdant Fang
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 0
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 0.0
+      lightning: false
+      heal-attacker: 3
+      particle: HAPPY_VILLAGER
+      effects:
+      - POISON:5:1
+BERSERKER:
+  display: Berserker
+  color: '&4'
+  description: Pure rage. Brawlers who grow stronger in battle.
+  icon: IRON_AXE
+  weapon:
+    name: Bloodreaver
+    material: NETHERITE_AXE
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 4
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 0.0
+      lightning: false
+      heal-attacker: 2
+      particle: ANGRY_VILLAGER
+      effects:
+      - WITHER:3:0
+ARCANE:
+  display: Arcane
+  color: '&5'
+  description: Bending space and time itself.
+  icon: AMETHYST_SHARD
+  weapon:
+    name: Voidpiercer
+    material: NETHERITE_SWORD
+    unbreakable: true
+    enchants:
+    - SHARPNESS:5
+    - SWEEPING_EDGE:3
+    - UNBREAKING:3
+    proc:
+      cooldown-seconds: 6
+      extra-damage: 3
+      fire-ticks: 0
+      freeze-ticks: 0
+      knockback: 0.0
+      launch: 0.0
+      lightning: false
+      heal-attacker: 0
+      particle: WITCH
+      effects:
+      - LEVITATION:2:0
+      - WEAKNESS:5:0
