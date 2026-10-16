@@ -487,7 +487,7 @@ public final class AdminCommand implements CommandExecutor, TabCompleter {
     private void cooldown(CommandSender s, String[] a) {
         if (a.length < 3 || !a[1].equalsIgnoreCase("reset")) { Text.msg(s, "&cUsage: /wincors cooldown reset <player|all>"); return; }
         if (a[2].equalsIgnoreCase("all")) {
-            for (Player p : Bukkit.getOnlinePlayers()) plugin.powers().resetCooldowns(p); plugin.combat().resetPearl(p);
+            for (Player p : Bukkit.getOnlinePlayers()) { plugin.powers().resetCooldowns(p); plugin.combat().resetPearl(p); }
             Text.msg(s, "Reset cooldowns for everyone online.");
             return;
         }
